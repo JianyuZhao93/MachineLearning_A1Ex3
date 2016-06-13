@@ -12,9 +12,9 @@
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-function mykmeans(gesture,init)
+function mykmeans(gesture,init,K)
 
-    K = size(init,1);
+    %K = size(init,1);
     n = size(gesture,1)*size(gesture,2);
     converged = 0;
     it = 0;% iteration times counter

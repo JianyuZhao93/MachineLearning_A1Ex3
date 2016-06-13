@@ -13,11 +13,10 @@
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-clearvars;
+function Exercise3_kmeans(gesture_l,gesture_o,gesture_x,init_cluster_l,...
+                          init_cluster_o,init_cluster_x,K)
+mykmeans(gesture_l,init_cluster_l,K);
+mykmeans(gesture_o,init_cluster_o,K);
+mykmeans(gesture_x,init_cluster_x,K);
 
-load('gesture_dataset.mat');
-
-mykmeans(gesture_l,init_cluster_l);
-mykmeans(gesture_o,init_cluster_o);
-mykmeans(gesture_x,init_cluster_x);
-
+end
